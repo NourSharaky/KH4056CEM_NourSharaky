@@ -1,4 +1,4 @@
-Coventry University - The knowledge hub
+Coventry University - The Knowledge Hub Universities
 
 KH4056CEM - Intro to Web Development and Database Systems - EHC LVL4 - S02 2021/2022
 
