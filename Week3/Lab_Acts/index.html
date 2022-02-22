@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Act 1</title>
+        <link rel="stylesheet" href="styles.css">
+        <style media="screen">
+          .title{
+            text-align: center;
+          }
+          .button{
+            padding: 10px 15px 10px 15px
+          }
+        </style>
+    </head>
+
+    <body>
+      <h1 class="title">Forms: Hijacking Websites</h1>
+      <hr>
+      <br>
+      <div class="button">
+        <button type="button" class="btn" name="button">click me</button>
+        <button type="button" class="btn" name="button2">click me</button>
+      </div>
+      <br>
+
+      <div class="reddit">
+          <form class="" action="https://reddit.com/search/?" method="get">
+            <fieldset>
+              <legend>HIJACKING REDDIT</legend>
+              <label for="reddit">Search reddit:</label>
+              <input type="text" name="q" placeholder="Type something.." required="">
+              <input type="submit" value="Search" name="search-btn">
+            </fieldset>
+          </form>
+      </div>
+
+      <div class="google">
+        <form class="" action="https://google.com/search" method="get">
+          <fieldset>
+            <legend>HIJACKING GOOGLE</legend>
+            <label for="reddit">Search Google:</label>
+            <input  type="text" name="q" placeholder="Type something.." required="">
+            <input type="submit" value="Search" name="search-btn">
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="youtube">
+        <form class="" action="https://youtube.com/results?" method="get">
+            <fieldset>
+              <legend>HIJACKING YOUTUBE</legend>
+              <label for="reddit">Search Youtube:</label>
+              <input type="text" name="q" placeholder="Type something.." required="">
+              <input type="submit" value="Search" name="search-btn">
+            </fieldset>
+          </form>
+      </div>
+
+
+      <div class="">
+        Hold me
+      </div>
+    </body>
+</html>
