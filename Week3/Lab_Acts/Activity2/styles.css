@@ -1,0 +1,63 @@
+*{
+  font-family:monospace;
+}
+body {
+  margin:0
+}
+.row{
+  width:100%;
+  display:flex;
+  }
+.im{
+  width:30%;
+  padding:calc(10%/6)
+}
+img{
+  height:80%;
+  width:100%;
+}
+p {
+  text-align:center;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding:0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0,86,138);
+}
+li{
+  float: left;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding:16px;
+  width:20vw ;
+  text-decoration: none;
+  color:white;
+  font-size:1.1vw;
+  font-family: "Nunito";
+  text-transform: uppercase
+}
+li:hover{
+    background-color:rgb(77, 159, 254)
+}
+@viewport {
+width: device-width ;
+zoom: 1.0 ;
+}
+@media screen and (max-width:380px) {
+  .row{
+    display:block
+}
+.im{
+  width:100%;
+  margin-bottom: 20px;
+  padding: 0px
+  }
+}
