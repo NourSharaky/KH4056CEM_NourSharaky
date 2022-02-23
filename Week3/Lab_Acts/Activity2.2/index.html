@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Price Tiers</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style media="screen">
+          *{
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            text-transform: uppercase;
+          }
+          body {
+            background-color: #60a9ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+          }
+          .content{
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            width: 100%;
+            max-width: 950px;
+          }
+          .plan{
+            border-bottom: 1px solid #e1f1ff;
+          }
+          .plan:last-child{
+            border-bottom: none;
+          }
+          img{
+            margin-bottom: 25px;
+            max-width:100%;
+          }
+          h2{
+            color: #888;
+            font-weight: 600;
+            letter-spacing: 1px;
+          }
+          .features{
+            color: #016ff9;
+            margin: 50px 0px 25px 0px;
+          }
+          li{
+            border-top: 1px solid #e1f1ff;
+            font-weight: 600;
+            font-size: 12px;
+            letter-spacing: 1px;
+            padding: 15px;
+          }
+          li:last-child{
+            border-bottom: 1px solid #e1f1ff;
+          }
+          span{
+            color: #016ff9;
+            display: block;
+            font-size: 32px;
+            font-weight: 700;
+          }
+          ul{
+            list-style:none;
+          }
+          a{
+            text-decoration: none;
+            border: 1px solid #9dd1ff;
+            border-radius: 10px;
+            color: #348efe;
+            display: inline-block;
+            padding: 15px 35px;
+            margin: 25px;
+          }
+          a:hover{
+            background-color: #e1f1ff;
+          }
+          .btn{
+            background-color: #48aaff;
+            color: white;
+          }
+          .btn:hover{
+            background-color: #269aff;
+          }
+          @media screen and (min-width: 900px){
+            .content{
+              flex-direction:row;
+            }
+            .plan{
+              border-bottom: none;
+              border-right: 1px solid #e1f1ff;
+              padding: 25px 50px;
+            }
+            .plan:last-child{
+              border-right: none;
+            }
+          }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+          <div class="plan">
+            <img src="icon1.png" alt="">
+            <h2>Personal</h2>
+            <ul class="features">
+              <li>Custom domains</li>
+              <li>Sleeps after 30 mins of inactivity</li>
+            </ul>
+            <span>FREE</span>
+            <a href="#/">Sign up</a>
+          </div>
+
+          <div class="plan">
+            <img src="icon2.png" alt="">
+            <h2>Small team</h2>
+            <ul class="features">
+              <li>Never sleeps</li>
+              <li>Multiple workers for more powerful apps</li>
+            </ul>
+            <span>$150</span>
+            <a href="#/" class="btn">Free trial</a>
+          </div>
+
+          <div class="plan">
+            <img src="icon3.png" alt="">
+            <h2>Enterprise</h2>
+            <ul class="features">
+              <li>Dedicated</li>
+              <li>Simple horizontal scalability</li>
+            </ul>
+            <span>$400</span>
+            <a href="#/">Free trial</a>
+          </div>
+
+        </div>
+    </body>
+</html>
