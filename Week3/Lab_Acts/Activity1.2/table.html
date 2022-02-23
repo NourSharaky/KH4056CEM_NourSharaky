@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Table</title>
+        <style>
+          *{
+            font-family: Arial;
+            margin: 0 auto;
+            text-align: center;
+          }
+            table, h3{
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center;
+            }
+            table{
+                border: 1px solid white;
+                border-collapse: collapse;
+                margin-bottom: 30px
+            }
+            td,th{
+                border: 3px solid white;
+            }
+            td{
+              padding: 25px;
+              background-color:rgb(152, 255, 230);
+              width: 100px ;
+              height: 75px;
+            }
+            th{
+              padding: 10px;
+              background-color:rgb(62, 255, 208);
+              width: 150px ;
+              padding: 15px
+            }
+            h1{
+              color: rgb(236, 51, 101);
+              border-radius: 45px;
+              border: 3px dashed rgb(218, 46, 92);
+              padding: 10px 15px;
+              width: 400px;
+              margin-top: 50px;
+              margin-bottom: 50px;
+            }
+            a {
+            text-decoration: none;
+            color:white;
+            background-color: DodgerBlue;
+            padding: 15px 15px;
+            }
+            a:hover{
+            background-color: RoyalBlue
+            }
+        </style>
+    </head>
+    <body>
+      <br>
+      <h1>Table Of Courses</h1>
+      <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Course Title</th>
+                    <th>Course Duration</th>
+                    <th>Course Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>7 hours</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>12 hours</td>
+                    <td>Advanced</td>
+                </tr>
+                <tr>
+                  <td>JavaScript</td>
+                  <td>22 hours</td>
+                  <td>Advanced</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="index.html">Home</a>
+    </body>
+</html>
