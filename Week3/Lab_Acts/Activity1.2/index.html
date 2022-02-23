@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Home</title>
+      <style media="screen">
+      *{
+        font-family: "Avenir Next LT Pro"  ;
+        }
+      .container{
+        width: 1240px ;
+        margin: 0 auto;
+        }
+        .logo{
+          width: 150px;
+          height: 150px;
+        }
+        table {
+          margin-bottom: 20px;
+          margin-left: auto;
+          margin-right:auto;
+        }
+        span {
+          font-size: 40px;
+          text-shadow: 3px 3px 13px rgba(91, 91, 91, 0.47);
+        }
+        .links{
+          width: 400px;
+          margin-left:auto;
+          margin-right: auto;
+          margin-bottom: 70px;
+        }
+        .Home , .Course {
+          text-decoration: none;
+          color:DodgerBlue;
+          border: 2px solid DodgerBlue ;
+          padding: 10px 15px;
+          margin-right: 10px;
+        }
+        .Form {
+          text-decoration: none;
+          color:white;
+          background-color: DodgerBlue;
+          padding: 10px 15px;
+          margin-right: 10px;
+        }
+        .Home:hover, .Course:hover {
+          background-color: DodgerBlue;
+          color: white;
+        }
+        .Form:hover {
+          background-color: RoyalBlue;
+        }
+        .s1h{
+          background:linear-gradient(to left, #13f1fc 0%,#0470dc 100%);
+        }
+        .s2h {
+          background:linear-gradient(135deg, #F36265 0%,#961276 100%);
+        }
+        .s3h {
+          background:linear-gradient(to left, #42e695 0%,#3bb2b8 100%);
+        }
+        .s1h, .s2h, .s3h{
+        padding: 10px 10px ;
+        color:#fff;
+        font-size: 20px;
+        font-weight: 500;
+        }
+        .section1 {
+        background-color: rgba(215, 254, 255, 0.76);
+        padding-bottom: 60px
+        }
+        .section2 {
+        background-color: rgba(254, 209, 235, 0.39);
+        padding-bottom: 30px
+        }
+        .section3{
+          background-color: rgba(236, 254, 208, 0.48)
+        }
+        button {
+        border: 0px;
+        padding: 15px;
+        color: white;
+        background-color: rgb(251, 148, 82);
+        font-size:20px;
+        }
+        button:hover{
+          background-color: rgb(200, 78, 0);
+          cursor:pointer
+        }
+        td{
+          padding: 15px 30px
+        }
+        iframe{
+          margin-left:auto;
+          margin-right: auto;
+          display: block;
+          padding: 15px;
+          border-radius: 15px;
+          background-color: rgba(200, 200, 200, 0.48)
+        }
+
+      </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="page-head">
+          <table>
+            <tbody>
+              <tr>
+                <td><img class="logo" src="logo.png" alt="logo"></td>
+                  <td><span>Welcome to Developers Joint !</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="links">
+            <a class="Home" href="#">Home</a>
+            <a class="Course" href="courses.html">Table of Courses</a>
+            <a class="Form" href="form.html">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="section1">
+          <p class="s1h">Who are developers?</p>
+          <br>
+          <blockquote>
+            A developer is an individual that builds and create software and applications. He or she writes, debugs and executes the source code of a software application. A developer is also known as a software developer, computer programmer, programmer, software coder or software engineer.
+          </blockquote>
+          <cite>-source "techopedia.com".</cite>
+        </div>
+
+        <div class="section2">
+          <p class="s2h">Type of Developers</p>
+          <br>
+          <table class="typesofdev">
+          <tbody>
+            <tr>
+              <td><button type="button" name="button">Front-End </button></td>
+              <td><button type="button" name="button">Back-End</button></td>
+              <td><button type="button" name="button">Full-Stack</button></td>
+              <td><button type="button" name="button">Middle-Tier</button></td>
+              <td><button type="button" name="button">Desktop</button></td>
+              <td><button type="button" name="button">Mobile</button></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+
+        <div class="section3">
+          <p class="s3h">Check Out Lastest Video</p>
+          <br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qV4EzzQFgEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+        </div>
+
+
+
+      </div>
+    </body>
+</html>

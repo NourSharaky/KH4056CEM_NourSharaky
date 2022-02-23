@@ -15,7 +15,6 @@
   font-size:30px;
   text-decoration: underline wavy rgb(180, 6, 205);
 }
-
 .btn {
   background-color:rgb(244, 6, 99);
   color: white;
@@ -60,6 +59,7 @@ input[type="submit"]
   color:#8a97a0;
   box-sizing:border-box;
   width:90%;
+  outline: 0
 }
 
 input[type="text"]:focus {
