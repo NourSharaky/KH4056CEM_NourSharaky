@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallex Website Demo</title>
+    <style media="screen">
+      body, html{
+        height:100%;
+        margin:0;
+        font-size:18px;
+        font-family:"Avenir Next LT Pro", sans-serif;
+        font-weight:400;
+        line-height:1.8em;
+        color: grey;
+      }
+      .b1, .b2, .b3{
+        position:relative;
+        opacity:0.70;
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+      }
+      .b1{
+        background-image:url('image1.jpg');
+        min-height:100%;
+      }
+      .sec{
+        position:absolute;
+        top:50%;
+        width:100%;
+        text-align:center;
+        font-size:27px;
+        letter-spacing:8px;
+        text-transform:uppercase;
+      }
+      .sec .text{
+        background-color:#111;
+        color:white;
+        padding:20px;
+      }
+      .sec .text.trans{
+        background-color:transparent;
+      }
+      section{
+        text-align:center;
+        padding:50px 80px;
+      }
+
+      .light{
+        background-color:#f4f4f4;
+        color:#666;
+      }
+
+      .dark{
+        background-color:#282e34;
+        color:#ddd;
+      }
+      .b2{
+        background-image:url('image2.jpg');
+        min-height:400px;
+      }
+      .b3{
+        background-image:url('image3.jpg');
+        min-height:400px;
+      }
+      /* @media(max-width:568px){
+        .b1,{
+          background-attachment:scroll;
+        }
+      } */
+
+    </style>
+  </head>
+  <body>
+    <div class="b1">
+      <div class="sec">
+        <span class="text">PARALLAX WEBSITE</span>
+      </div>
+    </div>
+    <section class="light">
+      <h2>Section One</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <div class="b2">
+      <div class="sec">
+        <span class="text trans">IMAGE TWO TEXT</span>
+      </div>
+    </div>
+      <section class="dark">
+        <h2>Section Two</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+    <div class="b3">
+      <div class="sec">
+        <span class="text trans">IMAGE THREE TEXT</span>
+      </div>
+    </div>
+      <section class="dark">
+        <h2>Section Two</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+    <div class="b1">
+      <div class="sec">
+        <span class="text">TRAVERSY MEDIA</span>
+      </div>
+    </div>
+    
+  </body>
+</html>
