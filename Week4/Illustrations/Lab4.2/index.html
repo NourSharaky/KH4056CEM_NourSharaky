@@ -1,30 +1,165 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>responsive drop-down menu</title>
 
+    <!-- use font awesome to use ready-made icons (javascript) -->
     <script src="https://kit.fontawesome.com/51f1a2fdea.js" crossorigin="anonymous"></script>
 
     <style media="screen">
       li{
+        /* remove list markers */
         list-style:none;
+        /* seperate list items */
+        width: 25%;
+        /* to make use of the remaining 25% in the width and better seperate the items */
+        padding: 0 calc(25%/6);
       }
       a{
+        /* remove underline in anchor tags */
         text-decoration: none;
+        /* place text in the center of the div */
+        text-align: center;
+        /* for the link to take the entire width of the li */
+        width: 100%;
+        /* for the entire block to take the anchor tag's properties */
+        display: inline-block;
+        /* add padding in the top and bottom */
+        padding: 15px 0px;
+        /* transition: hover effect */
+        transition: background-color 200ms ease-in-out, color 200ms ease-in-out ;
       }
+      a:hover{
+        /*to change the background color of the block while hovering over it */
+        background-color: DodgerBlue;
+        /*to change the color of the text while hovering over the block */
+        color: white;
+      }
+      ul{
+        /* remove any paddings and margins */
+        padding: 0;
+        margin: 0;
+        /* to put list items next to each other */
+        display: flex;
+        /* place items in center of page */
+        justify-content: center;
+        background-color: #ddd
+      }
+      body{
+        /* remove any paddings in body */
+        margin: 0;
+      }
+      .dropDownIcon{
+        /* to not view the drop-down icon while in full display */
+        display: none;
+      }
+
+      /* -------------------------RESPONSIVE DESIGN-------------------------- */
+      /* to adapt in smaller screens or width */
+
+      @media screen and (max-width:570px){
+        ul{
+          /* change direction of flex from row to column */
+          flex-direction: column;
+        }
+        .dropDownIcon{
+          /* to show the hidden drop down menu icon */
+          display: block;
+          width: 10%;
+          /* align the icon to the left */
+          margin-left: 90%;
+        }
+
+        /* to align the icon in the center within the anchor tag */
+        /* .dropDownIcon a{
+          text-align: center;
+        } */
+
+        li{
+          /* for the hover effect (block) to take the whole width of the screen */
+          width: 100%;
+          /* remove the extra paddings */
+          padding: 0;
+        }
+
+        /* (this applies to all list items except the first child) */
+        nav ul li:not(:nth-child(1)) a{
+          /* align list items to the left and give padding from the left only */
+          text-align: left;
+          padding-left: 20px;
+          /* to avoid oveflowing padding, width or margin */
+          box-sizing: border-box;
+        }
+        .displayNone{
+          display: none;
+        }
+        .displayBlock{
+          display: block;
+        }
+      }
+
+
     </style>
 
   </head>
 
   <body>
+    <!-- acts as a normal div -->
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact US</a></li>
+
+        <!-- adding an ICON from fontawesome -->
+        <li class="dropDownIcon"  onclick="Toggle()"><a href="#"><i class="fa-solid fa-circle-chevron-down"></i></a></li>
+        <!-- OR use html tags from unicode table-->
+        <!-- <li><a href="#">&#9776;</a></li> -->
+
+        <li class="get-li displayNone"><a href="#">Home</a></li>
+        <li class="get-li displayNone"><a href="#">About</a></li>
+        <li class="get-li displayNone"><a href="#">Contact US</a></li>
       </ul>
     </nav>
+
+    <!-- ____________________________JavaScript____________________________ -->
+    <script type="text/javascript">
+    // save any item with class "get-li" in a variable lists
+    var lists = document.getElementsByClassName("get-li")
+    function Toggle(){
+      // loop over list items
+      // to display list
+      if (lists[0].classList.contains("displayNone")) {
+        for (i = 0; i < lists.length ; i++){
+          lists[i].classList.replace("displayNone", "displayBlock") }
+      }
+      // to not display list
+      else if (lists[0].classList.contains("displayBlock")) {
+        for (i = 0; i < lists.length ; i++){
+          lists[i].classList.replace("displayBlock", "displayNone") }
+      }
+    }
+    </script>
+
+    <!-- <script type="text/javascript">
+      var lists = document.getElementsByClassName("get-li")
+
+      function toggle(){
+        if (lists[0].classlist.contains("displayNone")){
+          lists[0].classlist.replace("displayNone", "displayBlock")
+        }
+        else if (lists[0].classlist.contains("displayBlock")){
+          lists[0].classlist.replace("displayBlock", "displayList")
+        }
+      }
+
+    </script> -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr><hr>
+    <h1><u>TESTING JAVASCRIPT:</u></h1>
+    <!-- _________________javascript illustration__________________________ -->
+    <h1>Make me red</h1>
+    <h1 id="the-h1">Make me green</h1>
+    <h1 class="the-h1-class">Make me blue</h1>
 
   </body>
 </html>
