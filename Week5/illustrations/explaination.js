@@ -28,3 +28,38 @@ var myfunc = function(){
   // arguements
 myfun(10,20);
 myfunc();
+
+
+// -----------------Debugging-----------------
+
+// terminal? console/REPL/SHELL
+// print? console.log()
+
+// -----------------data types / casting -----------------
+var x = 10;
+x=[10,20,20];
+x= {
+  name: "ahmed",
+  age: 26
+}
+console.log(x);
+// array
+console.log(x[1]);
+// key value pair (dictionary)
+// dot notation
+console.log(x.name);
+// bracket notation
+console.log(x["name"]);
+console.log(typeof(x));
+
+
+
+x="10";
+// change type into number
+number(x);
+parseInt("1000");
+// NaN - not a number
+x= Number("Sdfg")
+// output: NaN
+isNaN(Number("Sdfg"))
+// output: true
