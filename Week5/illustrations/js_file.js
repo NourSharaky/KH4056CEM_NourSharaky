@@ -20,9 +20,34 @@ function getName(){
   confirm("Are you sure?");
 }
 
-
 // console.log(getName())
 // getName();
+// --------------------------------------------------------------
+      // Activity 2
+      function confirmName(){
+        name = prompt("Please enter your username");
+        if (name == "")empty = alert("Do not enter empty strings");
+        else{
+          valid = confirm(`Are you ${name}?`);
+          if (valid == true) alert(`Welcome ${name}!`);
+          else alert(`Access Denied!`);
+        }
+      }
+      // confirmName();
+// --------------------------------------------------------------
+      // Activity 3
+      function Name(){
+        name = prompt("Please enter your username");
+        if (name == "") return false;
+        else{
+          valid = confirm(`Are you ${name}?`);
+          if (valid == true) return name;
+          else return false;
+        }
+      }
+
+      // Name();
+// --------------------------------------------------------------
 
 // illustration - change text
 function changeH1(){
@@ -37,6 +62,7 @@ function changeH1a(){
   h1a.innerText = "Hello World";
 }
 changeH1a();
+// --------------------------------------------------------------
 
 // illustration - italic
 function italic(){
@@ -52,7 +78,7 @@ function underline(){
   u.style = "text-decoration: underline;";
 }
 underline();
-
+// --------------------------------------------------------------
 // illustration - styles inline
 function styl(){
   var t = document.getElementById("ill3");
@@ -69,3 +95,17 @@ function sty(){
   t.style = "color: magenta; background-color: #ddd; border:1px solid skyblue;";
 }
 sty()
+// --------------------------------------------------------------
+// Quick Ex1.
+function insertTextIntoHTML(value){
+  var h2 = document.getElementById("illEx");
+  if (value){
+    h2.innerText = `Welcome ${value}`
+  }
+  else{
+      h2.innerText = `Access Denied`
+      h2.style.color = "red"
+  }
+}
+insertTextIntoHTML(Name())
+// --------------------------------------------------------------
