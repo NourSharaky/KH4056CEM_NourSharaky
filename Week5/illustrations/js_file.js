@@ -26,43 +26,46 @@ function getName(){
 
 // illustration - change text
 function changeH1(){
-  var h1 = document.getElementById("ill")
-  h1.innerText = "some text"
+  var h1 = document.getElementById("ill");
+  h1.innerText = "some text";
 }
-changeH1()
+changeH1();
 
 // to do - change text
 function changeH1a(){
-  var h1a = document.getElementById("change-h1")
-  h1a.innerText = "Hello World"
+  var h1a = document.getElementById("change-h1");
+  h1a.innerText = "Hello World";
 }
-changeH1a()
+changeH1a();
 
 // illustration - italic
 function italic(){
-  var i = document.getElementById("ill2")
-  old = i.innerText
-  i.innerHTML = `<i>${old}</i>`
+  var i = document.getElementById("ill2");
+  old = i.innerText;
+  i.innerHTML = `<i>${old}</i>`;
 }
-italic()
+italic();
 
 // to do - underline
 function underline(){
-  var u = document.getElementById("change-html-h1")
-  u.style = "text-decoration: underline;"
+  var u = document.getElementById("change-html-h1");
+  u.style = "text-decoration: underline;";
 }
-underline()
+underline();
 
 // illustration - styles inline
 function styl(){
-  var t = document.getElementById("ill3")
-  t.style = "color: red; font-size: 40px; text-decoration-line: underline; text-decoration-style: wavy;"
+  var t = document.getElementById("ill3");
+  // t.style = "color: red; font-size: 40px; text-decoration-line: underline ; text-decoration-style: wavy;"
+  t.style.color= "red";
+  t.style.fontSize= "40px";
+  t.style.textDecoration= "underline wavy green";
 }
-styl()
+styl();
 
 // to do - styles inline
 function sty(){
-  var t = document.getElementById("change-style-h1")
-  t.style = "color: magenta; background-color: #ddd; border:1px solid skyblue;"
+  var t = document.getElementById("change-style-h1");
+  t.style = "color: magenta; background-color: #ddd; border:1px solid skyblue;";
 }
 sty()
