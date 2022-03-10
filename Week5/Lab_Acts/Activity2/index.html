@@ -6,21 +6,16 @@
   </head>
   <body>
     <script type="text/javascript">
-
-      name = prompt("Please enter your username")
-      if (name == ""){
-        empty = alert("Do not enter empty strings")
-      }
+    function confirmName(){
+      name = prompt("Please enter your username");
+      if (name == "")empty = alert("Do not enter empty strings");
       else{
-        valid = confirm(`Are you ${name}?`)
-        if (valid == true){
-          welcome = alert(`Welcome ${name}`)
-        }
-        else{
-          deny = alert(`Access Denied`)
-        }
+        valid = confirm(`Are you ${name}?`);
+        if (valid == true) alert(`Welcome ${name}!`);
+        else alert(`Access Denied!`);
       }
-
+    }
+    confirmName();
     </script>
   </body>
 </html>
