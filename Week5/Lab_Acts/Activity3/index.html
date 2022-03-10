@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>confirm name</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    function Name(){
+      name = prompt("Please enter your username");
+      if (name == ""){
+        return false
+      }
+      else{
+        valid = confirm(`Are you ${name}?`);
+        if (valid == true) {
+          return name;
+        }
+        else {
+          return false;
+        }
+      }
+    }
+    Name();
+    </script>
+  </body>
+</html>

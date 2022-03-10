@@ -101,7 +101,36 @@
       // // concatenation method 2 (ES6) --> template literals
       // // ~ TILDE: `` back-ticks
       // alert(`Welcome ${name} again from ES6 !`);
-      
+// --------------------------------------------------------------
+      // Activity 2
+      function confirmName(){
+        name = prompt("Please enter your username");
+        if (name == "")empty = alert("Do not enter empty strings");
+        else{
+          valid = confirm(`Are you ${name}?`);
+          if (valid == true) alert(`Welcome ${name}!`);
+          else alert(`Access Denied!`);
+        }
+      }
+      // confirmName();
+// --------------------------------------------------------------
+      // Activity 3
+      function Name(){
+        name = prompt("Please enter your username");
+        if (name == ""){
+          return false
+        }
+        else{
+          valid = confirm(`Are you ${name}?`);
+          if (valid == true) {
+            return name;
+          }
+          else {
+            return false;
+          }
+        }
+      }
+      // Name();
     </script>
 
   </body>
