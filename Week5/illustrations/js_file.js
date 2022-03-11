@@ -100,12 +100,25 @@ sty()
 function insertTextIntoHTML(value){
   var h2 = document.getElementById("illEx");
   if (value){
-    h2.innerText = `Welcome ${value}`
+    h2.innerText = `Welcome ${value}`;
   }
   else{
-      h2.innerText = `Access Denied`
-      h2.style.color = "red"
+      h2.innerText = `Access Denied`;
+      h2.style.color = "red";
   }
 }
-insertTextIntoHTML(Name())
+// insertTextIntoHTML(Name())
 // --------------------------------------------------------------
+// illustration - adding class
+var h2 = document.getElementById("ill4");
+h2.setAttribute("class","h2-red")
+
+//  illustration - adding 2 classes
+var h2 = document.getElementById("ill5");
+var oldClass = h2.getAttribute("class")
+h2.setAttribute("class",`h2-red ${oldClass}`)
+
+// --------------------------------------------------------------
+// illustration - using class lists
+var c2 = document.getElementById("ill6");
+c2.classList.add("h1-red");
