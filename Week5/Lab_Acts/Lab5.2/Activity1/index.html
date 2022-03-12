@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>btn toggle</title>
+    <style media="screen">
+      *{
+        font-family: Arial;
+      }
+      h1,p{
+        text-align: center;
+      }
+      .circle {
+        background: rgb(167, 0, 88);
+        color: white;
+        text-align: center;
+        width: 200px;
+        height: 200px;
+        border-radius: 300px;
+        margin: 0 auto;
+        cursor: pointer;
+        }
+      .square{
+        background: rgb(167, 0, 88);
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        width: 500px;
+        height: 200px;
+        border-radius: 10px ;
+        margin: 0 auto;
+        cursor: pointer;
+        }
+      span{
+        display: block;
+        margin-top: 100px;
+        top: 40%;
+        font-weight: 400;
+        font-size: 30px;
+        /* margin-left: auto;
+        margin-right: auto;
+        text-align: center; */
+        position: relative;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JS DOM Challange</h1>
+    <br>
+    <p><u><i> Button Toggling concept</i></u></p>
+    <div class="og circle">
+      <span>Click Me</span>
+    </div>
+    <script type="text/javascript">
+
+      var og = document.getElementsByClassName("og")[0];
+      var c = "og circle";
+      var s = "og square";
+
+      og.onclick = function(){
+        if (og.className== c){
+          og.innerHTML = "<span>I'm a square Now ! </span>";
+          og.classList.replace("circle" ,  "square");
+        }
+        else if (og.className== s){
+          og.innerHTML = "<span>I'm a Circle Now ! </span>"  ;
+          og.classList.replace("square" ,  "circle") ;
+        }
+      }
+
+    </script>
+  </body>
+</html>
