@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Percentage Calculator</title>
+
+    <style media="screen">
+      *{
+        font-family: Arial;
+        text-align: center;
+      }
+      hr{
+        margin: 0 100px
+      }
+      .btn{
+        background: #f1f1f1;
+        outline: 0px;
+        border: 0px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 10px;
+        font-variant-caps: all-petite-caps;
+        font-size: 15px
+      }
+      .btn:hover{
+        cursor: pointer;
+      }
+      .btn:active{
+        background-color: #ddd;
+        cursor: pointer;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Percentage Calculator</h1>
+      <hr><br>
+      <form class="" action="index.html" method="post">
+        <input id="n1" type="text" name="" value="" title="Enter a number">
+        <span>of</span>
+        <input id="n2" type="text" name="" value="" title="Enter a number">
+        <br><br>
+        <button id="btn" class="btn" type="button" name="button">Calculate</button>
+        <br><br>
+        <label for="text" name="" value="">Result: </label>
+        <input id="res" type="text" name="" value="">
+        <br><br><hr>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      // inputs
+      var n1 = document.getElementById("n1");
+      var n2 = document.getElementById("n2");
+      // Result
+      var res = document.getElementById("res");
+      // Button
+      var btn = document.getElementById("btn");
+
+      // function
+
+      // function calculate(){
+      // btn.onclick = function(){
+      btn.addEventListener("click",function(){
+        // validation for empty values
+        let n1Val = n1.value;
+        let n2Val = n2.value;
+        let resVal;
+
+        if (n1Val && n2Val){
+          // do something
+          n1Val = Number(n1.value);
+          n2Val = Number(n2.value);
+          // validate that it is only number
+          if ( ( !isNaN(n1Val) ) && ( !isNaN(n2Val) ) ){
+            resVal = (n1Val/n2Val)*100;
+            // casting into number --> Number("100")--> 100
+            resVal = resVal + "%";
+            res.value = resVal;
+          }
+          else {
+            // something is not a Number
+            alert("[ERROR] Please enter numbers only");
+          }
+        }
+        else{
+          // n1 or n2 empty
+          alert("[EMPTY] Do not leave any field empty!");
+        }
+      })
+
+      // }
+    </script>
+
+  </body>
+</html>
